@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>AniCatch | Главная</title>
+</head>
+<body>
+    <header>
+        <div class="search-form-construction" id="searchFormConstruction">
+            <div class="search-form-object">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="searchFormSvgButton" width="22px" onclick="startSearchFormSearchAnime()"><path id="searchFormPathButton" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"></path></svg>
+                <input class="search-form-input-search" id="searchFormInputSearch" type="text" placeholder="Найти аниме" onfocus="searchFormSearchAnime()">
+            </div>
+            <hr id="searchFormHr">
+            <h3 class="search-form-results-name" id="searchFormResultsName"></h3>
+            <div class="search-form-results">
+                <div class="search-form-results-item" id="resultsSearchAnimeGrandBlue">
+                    <img src="https://shikimori.one/uploads/poster/animes/59986/26b6a1137ca7513bf60a5122b58bb334.jpeg">
+                    <h3 class="result-item-name">Необъятный океан</h3>
+                    <div class="result-item-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/></svg>
+                        <h6 class="slash">87%</h6>
+                        <h6>Рекоминдуют</h6>
+                    </div>
+                </div>
+                <div class="search-form-results-item" id="resultsSearchAnimeGachiakuta">
+                    <img src="https://shikimori.one:443/uploads/poster/animes/59062/eef2d14872e5da4d578fc662557bba51.jpeg">
+                    <h3 class="result-item-name">Гатиакута</h3>
+                    <div class="result-item-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/></svg>
+                        <h6 class="slash">80%</h6>
+                        <h6>Рекоминдуют</h6>
+                    </div>
+                </div>
+                <div class="search-form-results-item" id="resultsSearchAnimeSousouNoFrieren">
+                    <img src="https://shikimori.one/uploads/poster/animes/52991/dc841cc9fce2aa1e9907a4b61c5d1d92.jpeg">
+                    <h3 class="result-item-name">Провожающая в последний путь Фрирен</h3>
+                    <div class="result-item-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/></svg>
+                        <h6 class="slash">93%</h6>
+                        <h6>Рекоминдуют</h6>
+                    </div>
+                </div>
+                <div class="search-form-results-item" id="resultsSearchAnimeDandadanTwo">
+                    <img src="https://shikimori.one/uploads/poster/animes/60543/3a43204e424cfba2f1d29df67940cccd.jpeg">
+                    <h3 class="result-item-name">Дандадан 2</h3>
+                    <div class="result-item-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"/></svg>
+                        <h6 class="slash">85%</h6>
+                        <h6>Рекоминдуют</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="start-banner-construction">
+            <div class="start-banner-gradient"></div>
+            <video id="startBannerVideo" src="pages/anime/" poster="" muted autoplay></video>
+            <div class="start-banner-window">
+                <div class="start-banner-info">
+                    <h1 id="startBannerInfoName"></h1>
+                    <div style="margin-top: 10px; flex-wrap: wrap; display: flex;">
+                        <h4 id="startBannerInfoGenreOne"></h4>
+                        <h4 class="slash">|</h4>
+                        <h4 id="startBannerInfoGenreTwo"></h4>
+                        <h4 class="slash">|</h4>
+                        <h4 id="startBannerInfoGenreThree"></h4>
+                        <h4 class="slash">|</h4>
+                        <h4 id="startBannerInfoGenreFour"></h4>
+                        <h4 class="slash" id="startBannerInfoSlash">|</h4>
+                        <h4 class="start-banner-info-point" id="startBannerInfoPoint"></h4>
+                    </div>
+                    <span id="startBannerInfoCaption"></span>
+                </div>
+                <div class="start-banner-buttons">
+                    <a href="./pages/anime/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="34px"><path d="M480 576L192 576C139 576 96 533 96 480L96 160C96 107 139 64 192 64L496 64C522.5 64 544 85.5 544 112L544 400C544 420.9 530.6 438.7 512 445.3L512 512C529.7 512 544 526.3 544 544C544 561.7 529.7 576 512 576L480 576zM192 448C174.3 448 160 462.3 160 480C160 497.7 174.3 512 192 512L448 512L448 448L192 448zM224 216C224 229.3 234.7 240 248 240L424 240C437.3 240 448 229.3 448 216C448 202.7 437.3 192 424 192L248 192C234.7 192 224 202.7 224 216zM248 288C234.7 288 224 298.7 224 312C224 325.3 234.7 336 248 336L424 336C437.3 336 448 325.3 448 312C448 298.7 437.3 288 424 288L248 288z"/></svg>
+                        Подробнее
+                    </a>
+                    <a href="./pages/anime/">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="34px"><path d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"/></svg>
+                        Смотреть
+                    </a>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="32px" style="padding: 2px;"><path d="M192 64C156.7 64 128 92.7 128 128L128 544C128 555.5 134.2 566.2 144.2 571.8C154.2 577.4 166.5 577.3 176.4 571.4L320 485.3L463.5 571.4C473.4 577.3 485.7 577.5 495.7 571.8C505.7 566.1 512 555.5 512 544L512 128C512 92.7 483.3 64 448 64L192 64z"/></svg>
+                    </button>
+                    <button onclick="startBannerVolume()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="36px"><path id="startBannerButtonVolume" d="M256 416L208 416C181.5 416 160 394.5 160 368L160 272C160 245.5 181.5 224 208 224L256 224L390.1 104.8C396.5 99.1 404.7 96 413.2 96C432.4 96 448 111.6 448 130.8L448 509.2C448 528.4 432.4 544 413.2 544C404.7 544 396.5 540.9 390.1 535.2L256 416z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+    <script src="script.js"></script>
+</html>

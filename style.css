@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-background-main: #080808;
+    --color-background-secondary: #131313;
+    --color-text-main: #ffffff;
+    --color-subtext-main: #cccccc;
+    --color-high-point-main: #adff2f;
+    --color-low-point-main: #808080;
+    --color-button-main: #cccccc;
+    --color-button-hover-main: #ffffff;
+    --uncolor-text-main: #000000;
+}
+
+body {
+    font-weight: 22px;
+    font-family: "Roboto", sans-serif;
+    background: var(--color-background-main);
+    color: var(--color-text-main);
+}
+
+span, h4, h6 {
+    color: var(--color-subtext-main);
+}
+
+h4 {
+    font-weight: 400;
+}
+
+a, button, img, video {
+    user-select: none;
+}
+
+a {
+    font-weight: 500;
+    transition: .3s;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    color: var(--uncolor-text-main);
+    display: flex;
+}
+
+button {
+    transition: .3s;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+svg {
+    margin-right: 6px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.slash {
+    padding: 0 4px;
+    user-select: none;
+}
+
+header {
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+
+    .search-form-construction {
+        width: 33%;
+        height: 52px;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .3s;
+        border-radius: 27px;
+        background: var(--color-background-secondary);
+        overflow: hidden;
+        position: absolute;
+        
+        .search-form-object {
+            padding: 15px;
+            border-radius: 50px;
+            background: var(--color-background-secondary);
+            display: flex;
+
+            svg {
+                fill: var(--color-subtext-main);
+
+                &:hover {
+                    fill: var(--color-text-main);
+                }
+            }
+
+            .search-form-input-search {
+                width: 100%;
+                padding: 0 8px;
+                font-size: 18px;
+                background: var(--color-background-secondary);
+                color: var(--color-text-main);
+            }
+
+            &:focus-within {
+                svg {
+                    fill: var(--color-text-main);
+                }
+            }
+        }
+
+        hr {
+            margin-top: -1px;
+            transition: .3s;
+            border: 1px solid var(--color-subtext-main);
+            opacity: 0;
+        }
+
+        .search-form-results-name {
+            margin: 30px 0 0 30px;
+        }
+
+        .search-form-results {
+            padding: 12px 30px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 2.5%;
+            grid-row-gap: 6.5%;
+            display: grid;
+
+            .search-form-results-item {
+                height: fit-content;
+                display: none;
+
+                img {
+                    width: 100%;
+                    height: 205px;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    object-position: center;
+                    object-fit: cover;
+
+                    &:hover {
+                        transition: .1s;
+                        outline: 4px solid var(--color-text-main);
+                    }
+                }
+
+                svg {
+                    width: 18px;
+                    fill: var(--color-subtext-main);
+                }
+
+                .result-item-name {
+                    width: 300px;
+                    margin-top: 10px;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+
+                .result-item-info {
+                    margin-top: 1px;
+                    align-items: center;
+                    display: flex;
+
+                    svg {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 100%;
+
+    .start-banner-construction {
+        width: 100%;
+        height: 95vh;
+        position: relative;
+        
+
+        video {
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            object-fit: cover;
+            position: relative;
+        }
+
+        .start-banner-window {
+            width: 45%;
+            bottom: 8%;
+            left: 5%;
+            z-index: 3;
+            position: absolute;
+
+            .start-banner-info {
+                width: 100%;
+                margin-bottom: 30px;
+                position: relative;
+
+                h1 {
+                    width: 80%;
+                    font-size: 56px;
+                    line-height: 50px;
+                }
+
+                span {
+                    margin-top: 30px;
+                    font-size: 24px;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    display: -webkit-box;
+                }
+
+                .start-banner-info-point {
+                    color: var(--color-high-point-main);
+                }
+            }
+
+            .start-banner-buttons {
+                width: 100%;
+                display: flex;
+
+                a {
+                    padding: 10px 24px;
+                    margin-right: 10px;
+                    border-radius: 50px;
+                    background: var(--color-button-main);
+
+                    &:hover {
+                        background: var(--color-button-hover-main);
+                    }
+                }
+                
+                button {
+                    padding: 2px 10px;
+                    margin-right: 10px;
+                    background: var(--color-button-main);
+
+                    svg {
+                        margin: 0;
+                        margin-top: 3px;
+                    }
+
+                    &:hover {
+                        background: var(--color-button-hover-main);
+                    }
+                }
+            }
+        }
+
+        .start-banner-gradient {
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: linear-gradient(0deg, var(--color-background-main), transparent);
+            position: absolute;
+        }
+    }
+}
+
+footer {
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    border: 1px solid yellow;
+    /* position: absolute; */
+}
