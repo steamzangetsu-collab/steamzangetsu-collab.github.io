@@ -1,1 +1,1 @@
-<a href="steamzangetsu-collab.github.io" style="text-decoration: none;">welcome, my website</a>
+<a href="https://steamzangetsu-collab.github.io/" style="text-decoration: none;">welcome, my website</a>
